@@ -50,7 +50,7 @@
     <div class="container-fluid book-header">
         <div class="position-absolute top-50 start-50 translate-middle">
         <div class="container-fluid text-center px-5 py-4 rounded-3 book-form">
-                <div class="input-group m-auto">
+                <div class="input-group m-auto" id="inputg">
                     <select class="form-select" aria-label="Default select example">
                         <option selected disabled>Loctaion:</option>
                         <option value="1">Gudauri</option>
@@ -63,9 +63,8 @@
                     <span class="input-group-text">$</span>
                     <span class="input-group-text" id="price">0.00</span>
                 </div>
-                <button type="button" class="btn btn-success m-0 mt-3 w-100 d-inline btn-book">Continue</button>
             </div>
-            <div class="container-fluid text-centerp-5 px-5 py-4 mt-3 rounded-3 book-form">
+            <div class="container-fluid text-centerp-5 px-5 py-4 mt-3 rounded-3 book-form" style="display:none;" id="dbox">
                 <input class="form-control m-auto my-2" type="text" placeholder="Name:" aria-label="default input example">
                 <input class="form-control m-auto my-2" type="text" placeholder="Surname:" aria-label="default input example">
                 <input type="email" class="form-control m-auto my-2" id="exampleFormControlInput1" placeholder="Email:">
@@ -73,9 +72,9 @@
                 <div class="input-group m-auto">
                     <div class="input-group-text" id="btnGroupAddon">Choose date:</div>
                     <input type="date" id="flyday" name="flyday" class="form-control" id="exampleFormControlInput1">
-                    <button class="btn btn-success btn-book" type="button" id="button-addon2">Book</button>
                 </div>
             </div>
+            <button type="button" class="btn btn-success m-0 mt-3 w-100 d-inline btn-book">Continue</button>
         </div>
     </div>
 
