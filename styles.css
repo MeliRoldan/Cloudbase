@@ -1,0 +1,317 @@
+* {
+    box-sizing: border-box;
+}
+
+.nav {
+    background-color: transparent;
+}
+
+.scroll {
+    background-color: #fff;
+}
+
+.navbar a {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.navbar-brand {
+    color: rgb(19, 170, 160);
+}
+
+.nav-link {
+    color: black;
+}
+
+.nav-link {
+    text-transform: uppercase;
+}
+
+.carousel {
+    height: 700px;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    height:100%;    
+}
+
+.carousel-item {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+.carousel-img-1 {
+    background-image: url(images/1-img-tbilisi.jpg);
+}
+
+.carousel-img-2 {
+    background-image: url(images/2-image-gudauri-2.jpg);
+}
+
+.carousel-img-3 {
+    background-image: url(images/3-image-gonio.jpg);
+}
+
+.carousel-img-4 {
+    background-image: url(images/4-image-tbilisi.jpg);
+}
+
+.carousel-img-5 {
+    background-image: url(images/gudauri-2.jpg);
+}
+
+.carousel-control-next, .carousel-control-prev {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8%;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    background: 0 0;
+    border: 0;
+    opacity: .5;
+    transition: opacity .15s ease;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100% 100%;
+}
+
+.carousel-caption {
+    font-family: 'Bebas Neue', cursive;
+}
+
+.tbilisi-caption {
+    position: absolute;
+    right: 65%;
+    bottom: 30%;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    text-align: start;
+}
+
+.tbilisi-caption h5, .tbilisi-caption p {
+    font-size: 50px;
+    color: black;
+}
+
+.svaneti-caption {
+    position: absolute;
+    right: 0%;
+    bottom: 25%;
+    left: 30%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    text-align: start;
+}
+
+.svaneti-caption h5, .svaneti-caption p {
+    font-size: 90px;
+    color: black;
+}
+
+.gonio-caption {
+    position: absolute;
+    right: 0%;
+    bottom: 20%;
+    left: 20%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    text-align: start;
+}
+
+.gonio-caption h5, .gonio-caption p {
+    font-size: 70px;
+    color: black;
+}
+
+.bi-geo-alt-fill {
+    font-size: 50px;
+    position: relative;
+    bottom: 6px;
+}
+
+.kakheti-caption {
+    position: absolute;
+    right: 0%;
+    bottom: 12%;
+    left: 20%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    text-align: start;
+}
+
+.kakheti-caption h5, .kakheti-caption p {
+    font-size: 90px;
+    color: white;
+}
+
+.gudauri-caption {
+    position: absolute;
+    right: 0%;
+    bottom: 28%;
+    left: 20%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    text-align: start;
+}
+
+.gudauri-caption h5, .gudauri-caption p {
+    font-size: 90px;
+    color: black;
+    line-height: 73px;
+}
+
+.gudauri-caption .middle {
+    margin-left: 150px;
+}
+
+.gudauri-caption .last {
+    margin-left: 270px;
+}
+
+.services-col img, .services-col .card-body {
+    height: 369px;
+}
+
+.services-col-12 img, .services-col-12 .card-body {
+    height: 453px;
+}
+
+.card-body {
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.card-body h5 {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    font-size: 35px;
+}
+
+.btn-link {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: normal;
+    letter-spacing: 2px;
+    font-size: 12px;
+    color: rgb(19, 170, 160);
+}
+
+.btn-2 {
+    color: #fff;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    padding: 0;
+    outline: 0;
+}
+
+.btn-2 span {
+    padding: 15px;
+    background-color: rgb(62, 169, 161);
+}
+
+.card-service-p {
+    color: rgb(19, 170, 160);
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.card-text {
+    color: #9c9c9c;
+    font-size: 16px;
+    line-height: 27px;
+}
+
+.card-text-lg {
+    color: black;
+    font-size: 16px;
+    line-height: 27px;
+}
+
+.vert {
+    position: relative;
+    top: 0.8px;
+    -webkit-text-stroke: 1px;
+    font-size: 13px;
+}
+
+.footer , .copyright {
+    background-color: rgb(62, 169, 161) ;
+    color: #fff;
+}
+
+.benefits {
+    background-image: url(images/tbilisi-5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+    background-attachment: fixed;
+}
+
+.benefits h5 {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 33px;
+    line-height: 55px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.sponsors {
+    height: 100px;
+    overflow: hidden;
+}
+
+.sponsors .card img {
+    width: auto;
+    height: 100%;
+    padding: 30px;
+}
+
+.social {
+    color: #fff;
+    font-size: 25px;
+    margin: 5px;
+}
+
+.footer ul li {
+    font-weight: bold;
+    font-family:'Helvetica Neue', sans-serif;
+}
+
+.book-header {
+    background-image: url(images/book11.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    height: 620px;
+    background-attachment: fixed;
+}
+
+.btn-book {
+    background-color:rgb(62, 169, 161);
+    border-color: rgb(62, 169, 161);
+}
+
+.book-form {
+    background-color: rgba(255, 255, 255, 0.57);
+}
