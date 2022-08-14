@@ -315,3 +315,7 @@
 .book-form {
     background-color: rgba(255, 255, 255, 0.57);
 }
+
+.navbar-nav a:hover {
+    color: rgb(62, 169, 161);
+}
