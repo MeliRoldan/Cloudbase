@@ -2,22 +2,35 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: Clan Pro;
+    src: url(../Fonts/FFClanWebProNews.woff2) format("woff2"),url(../Fonts/FFClanWebProNews.woff) format("woff");
+    font-weight: 400
+}
+
+@font-face {
+    font-family: Clan Pro;
+    src: url(../Fonts/FFClanWebProRegular.woff2) format("woff2"),url(../Fonts/FFClanWebProRegular.woff) format("woff");
+    font-weight: 300
+}
+
 .nav {
     background-color: transparent;
 }
 
 .scroll {
-    background-color: #fff;
+    display: none;
 }
 
 .navbar a {
-    font-family: 'Helvetica Neue', sans-serif;
-    font-weight: normal;
+    font-family: normal 125%/1.66667 Clan Pro,Helvetica,Arial,sans-serif;
     font-size: 14px;
 }
 
-.navbar-brand {
+.navbar-brand span {
     color: rgb(19, 170, 160);
+    font-weight: bold;
+    font-size: 16px;
 }
 
 .nav-link {
@@ -26,10 +39,11 @@
 
 .nav-link {
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 .carousel {
-    height: 700px;
+    height: 633px;
     overflow: hidden;
 }
 
@@ -38,11 +52,33 @@
 }
 
 .carousel-item {
+    height: 100%;
+}
+
+.carousel-img {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 100%;
+
+    filter: contrast(80%);
+}
+
+.carousel-caption {
+    font-family: normal 125%/1.66667 Clan Pro,Helvetica,Arial,sans-serif;
+    text-align: start;
+    position: absolute;
+    top: 55%;
+    transform: translateY(-55%);
+}
+
+.btn-caption {
+    background-color: rgb(62, 169, 161);
+    border-color: rgb(62, 169, 161);
+    font-family: normal 125%/1.66667 Clan Pro,Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
 }
 
 .carousel-img-1 {
@@ -65,126 +101,30 @@
     background-image: url(images/gudauri-2.jpg);
 }
 
-.carousel-control-next, .carousel-control-prev {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 8%;
-    padding: 0;
-    color: #fff;
-    text-align: center;
-    background: 0 0;
-    border: 0;
-    opacity: .5;
-    transition: opacity .15s ease;
+.carousel-caption h5 {
+    font-size: 33px;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    padding-bottom: 15px;
 }
 
-.carousel-control-next-icon, .carousel-control-prev-icon {
-    display: inline-block;
-    width: 4rem;
-    height: 4rem;
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: 100% 100%;
+.carousel-caption p {
+    font-size: 19px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    width: 53.3333333%;
 }
 
-.carousel-caption {
-    font-family: 'Bebas Neue', cursive;
+.carousel-indicators .indicator {
+    width: 5%;
+  
 }
 
-.tbilisi-caption {
-    position: absolute;
-    right: 65%;
-    bottom: 30%;
-    left: 15%;
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-    text-align: start;
+.carousel-indicators .active {
+    width: 33%;
+    
 }
 
-.tbilisi-caption h5, .tbilisi-caption p {
-    font-size: 50px;
-    color: black;
-}
-
-.svaneti-caption {
-    position: absolute;
-    right: 0%;
-    bottom: 25%;
-    left: 30%;
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-    text-align: start;
-}
-
-.svaneti-caption h5, .svaneti-caption p {
-    font-size: 90px;
-    color: black;
-}
-
-.gonio-caption {
-    position: absolute;
-    right: 0%;
-    bottom: 20%;
-    left: 20%;
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-    text-align: start;
-}
-
-.gonio-caption h5, .gonio-caption p {
-    font-size: 70px;
-    color: black;
-}
-
-.bi-geo-alt-fill {
-    font-size: 50px;
-    position: relative;
-    bottom: 6px;
-}
-
-.kakheti-caption {
-    position: absolute;
-    right: 0%;
-    bottom: 12%;
-    left: 20%;
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-    text-align: start;
-}
-
-.kakheti-caption h5, .kakheti-caption p {
-    font-size: 90px;
-    color: white;
-}
-
-.gudauri-caption {
-    position: absolute;
-    right: 0%;
-    bottom: 28%;
-    left: 20%;
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-    text-align: start;
-}
-
-.gudauri-caption h5, .gudauri-caption p {
-    font-size: 90px;
-    color: black;
-    line-height: 73px;
-}
-
-.gudauri-caption .middle {
-    margin-left: 150px;
-}
-
-.gudauri-caption .last {
-    margin-left: 270px;
-}
 
 .services-col img, .services-col .card-body {
     height: 369px;
@@ -195,38 +135,36 @@
 }
 
 .card-body {
-    font-family: 'Helvetica Neue', sans-serif;
+    font-family: normal 125%/1.66667 Clan Pro,Helvetica,Arial,sans-serif;
 }
 
 .card-body h5 {
-    font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: .05em;
+    letter-spacing: .03em;
     font-size: 35px;
 }
 
 .btn-link {
-    font-family: 'Helvetica Neue', sans-serif;
-    font-weight: normal;
+    font-family: normal 125%/1.66667 Clan Pro,Helvetica,Arial,sans-serif;
     letter-spacing: 2px;
     font-size: 12px;
+    font-weight: bold;
     color: rgb(19, 170, 160);
 }
 
 .btn-2 {
-    color: #fff;
-    font-family: 'Helvetica Neue', sans-serif;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 2px;
-    padding: 0;
-    outline: 0;
+    font-family: normal 125%/1.66667 Clan Pro,Helvetica,Arial,sans-serif;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight:600;
+    border-radius: 0%;
 }
 
-.btn-2 span {
-    padding: 15px;
+.btn-2:hover {
     background-color: rgb(62, 169, 161);
+    border-color: rgb(62, 169, 161);
 }
 
 .card-service-p {
@@ -236,15 +174,13 @@
 }
 
 .card-text {
-    color: #9c9c9c;
+    color: #000000;
     font-size: 16px;
-    line-height: 27px;
 }
 
 .card-text-lg {
     color: black;
     font-size: 16px;
-    line-height: 27px;
 }
 
 .vert {
@@ -255,8 +191,12 @@
 }
 
 .footer , .copyright {
-    background-color: rgb(62, 169, 161) ;
-    color: #fff;
+    background-color: rgb(255, 255, 255) ;
+    color: rgb(62, 169, 161);
+}
+
+.benefits-container {
+    height: 500px;
 }
 
 .benefits {
@@ -264,16 +204,27 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 600px;
+    opacity: 0.4;
+    height: 100%;
     background-attachment: fixed;
 }
 
-.benefits h5 {
-    font-family: 'Helvetica Neue', sans-serif;
-    font-size: 33px;
-    line-height: 55px;
+.benefits-text {
+    color: #000000;
+    height: 100%;
+    position:static;
+    bottom: 60%;
+    transform: translateY(-60%);
+    text-align: center;
+    width: 53.33333333333%;
+    text-transform: uppercase;
+}
+
+.benefits-text h5 {
+    line-height: 40px;
+    font-family: normal 125%/1.66667 Clan Pro,Helvetica,Arial,sans-serif;
+    font-size: 15px;
     font-weight: bold;
-    color: #fff;
 }
 
 .sponsors {
@@ -288,18 +239,26 @@
 }
 
 .social {
-    color: #fff;
+    color: rgb(62, 169, 161);
     font-size: 25px;
     margin: 5px;
 }
 
+.footer ul {
+    padding-left: 0;
+    font-family:normal 125%/1.66667 Clan Pro,Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+}
+
 .footer ul li {
-    font-weight: bold;
-    font-family:'Helvetica Neue', sans-serif;
+    font-family:normal 125%/1.66667 Clan Pro,Helvetica,Arial,sans-serif;
+    padding: 5px 0px;
 }
 
 .book-header {
-    background-image: url(images/book11.jpg);
+    background-image: url(images/book-11.jpg);
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
@@ -310,12 +269,99 @@
 .btn-book {
     background-color:rgb(62, 169, 161);
     border-color: rgb(62, 169, 161);
+    text-transform: uppercase;
+} 
+
+.book-container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    font-family: normal 125%/1.66667 Clan Pro,Helvetica,Arial,sans-serif;
 }
 
 .book-form {
     background-color: rgba(255, 255, 255, 0.57);
+    padding: 20px 30px;
+    width: 26.333%;
 }
 
-.navbar-nav a:hover {
-    color: rgb(62, 169, 161);
+.form-select option {
+    text-transform: uppercase;
 }
+
+.about-img-1 {
+    background-image: url(images/about-3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;  
+}
+
+.about-img-2 {
+    background-image: url(images/team-2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;  
+}
+
+.about-img-3 {
+    background-image: url(images/news2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;  
+}
+
+.about-header {
+    background-image: url(images/book-11.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    height: 400px;
+    background-attachment: fixed;
+}
+
+.total , .terms {
+    color: rgb(19, 170, 160);
+    font-weight: bold;
+}
+
+.terms {
+    font-size: 13px;
+}
+
+
+input[type="text"]:focus,
+input[type="checkbox"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+.form-select:focus {   
+  border-color: rgba(19, 170, 160, 0.8);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(19, 170, 160, 0.6);
+  outline: 0 none;
+}
+
+input[type="checkbox"]:checked {
+    background-color: rgb(19, 170, 160);
+    border-color: rgb(19, 170, 160);
+}
+
+.card-title {
+    text-transform: uppercase;
+}
+
+.card-img-top {
+    height: 253px;
+}
+
