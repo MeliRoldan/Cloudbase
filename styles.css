@@ -22,13 +22,18 @@
     display: none;
 }
 
-.navbar-brand {
+.navbar-brand span {
     color: white;
     font-weight: bold;
     text-transform: uppercase;
+    font-size: 18px;
 }
 
-.navbar a {
+.navbar-brand span:hover {
+    color: white;
+}
+
+.nav-link {
     font-family: normal 125%/1.66667 Clan Pro,Helvetica,Arial,sans-serif;
     font-size: 14px;
     color: rgb(30, 91, 81);
@@ -36,7 +41,7 @@
     font-weight: bold;
 }
 
-.navbar a:hover {
+.nav-link:hover {
     color: white;
 }
 
@@ -71,6 +76,7 @@
     font-family: normal 125%/1.66667 Clan Pro,Helvetica,Arial,sans-serif;
     text-align: start;
     position: absolute;
+    left: 7.33%;
     top: 55%;
     transform: translateY(-55%);
 }
@@ -103,18 +109,17 @@
     background-image: url(images/gudauri-2.jpg);
 }
 
-.carousel-caption h5 {
-    font-size: 33px;
+.carousel-caption h1 {
     text-transform: uppercase;
-    color: rgb(0, 0, 0);
     padding-bottom: 15px;
 }
 
 .carousel-caption p {
-    font-size: 19px;
+    font-size: 20px;
     text-transform: uppercase;
+    font-weight: bold;
     color: rgb(255, 255, 255);
-    width: 53.3333333%;
+    width: 63.3333333%;
 }
 
 .carousel-indicators .indicator {
@@ -126,7 +131,6 @@
     width: 33%;
     
 }
-
 
 .services-col img, .services-col .card-body {
     height: 369px;
@@ -152,6 +156,10 @@
     font-size: 12px;
     font-weight: bold;
     color: rgb(19, 170, 160);
+}
+
+.btn-link:hover {
+    color: green;
 }
 
 .btn-2 {
@@ -225,7 +233,7 @@
 .benefits-text h5 {
     line-height: 40px;
     font-family: normal 125%/1.66667 Clan Pro,Helvetica,Arial,sans-serif;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -259,6 +267,24 @@
     padding: 5px 0px;
 }
 
+.nav-link-footer {
+    color: rgb(62, 169, 161);
+    text-decoration: none;
+}
+
+.nav-link-footer:hover {
+    color: green;
+}
+
+.map {
+    text-decoration: none;
+    color:rgb(62, 169, 161); ;
+}
+
+.map:hover {
+    color: green;
+}
+
 .book-header {
     background-image: url(images/book-11.jpg);
     background-size: cover;
@@ -276,18 +302,16 @@
 
 .book-container {
     position: absolute;
+    left: 6.6%;
     top: 50%;
     transform: translateY(-50%);
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
     font-family: normal 125%/1.66667 Clan Pro,Helvetica,Arial,sans-serif;
 }
 
 .book-form {
     background-color: rgba(255, 255, 255, 0.57);
     padding: 20px 30px;
-    width: 26.333%;
+    width: 30.333%;
 }
 
 .form-select option {
@@ -327,13 +351,14 @@
     background-attachment: fixed;
 }
 
-.total , .terms {
+.total , .terms a {
     color: rgb(19, 170, 160);
     font-weight: bold;
 }
 
-.terms {
+.terms a {
     font-size: 13px;
+    text-decoration: none;
 }
 
 

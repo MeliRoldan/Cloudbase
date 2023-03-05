@@ -1,34 +1,34 @@
-
-
-    <div class="container-fluid book-header p-0"> 
-      <div class="book-container">
-        <div class="rounded-3 book-form">
-          <div class="input-group m-auto" id="inputg">
-            <select class="form-select" aria-label="Default select example" id="options">
-              <option selected disabled>Location:</option>
-            </select>
-            <input type="number" class="form-control" placeholder="Person:" id="tentacles" name="tentacles" min="1" max="100" onchange="costCount()">
-          </div>
-          <input class="form-control m-auto my-2" type="text" placeholder="Pick a date:" aria-label="default input example" onfocus="(this.type='date')"  onblur="(this.type='text')">
-          <span style="text-align: end; text-transform: uppercase;" class="d-block total">Total cost: <span>________</span></span>
-        </div>
-        <div class="rounded-3 book-form">
-          <input class="form-control m-auto my-2" type="text" placeholder="Name:" aria-label="default input example">
-          <input class="form-control m-auto my-2" type="text" placeholder="Surname:" aria-label="default input example">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label terms" for="flexCheckDefault">
-              Check terms & conditions
-            </label>
-          </div>
-        </div>
-        <div class="rounded-3 book-form">
-          <input type="email" class="form-control m-auto my-2" id="exampleFormControlInput1" placeholder="Email:">
-          <input class="form-control m-auto my-2" type="text" placeholder="Phone number:" aria-label="default input example">
-          <button type="button" class="btn btn-success m-0 mt-3 w-100 btn-book">Book my flight</button>
-        </div>
-        
+<div class="container-fluid book-header p-0">
+  <div class="book-container container d-flex justify-content-between">
+    <div class="rounded-3 book-form">
+      <div class="input-group m-auto" id="inputg">
+        <select class="form-select" aria-label="Default select example" id="options">
+          <option selected disabled>Location:</option>
+        </select>
+        <input type="number" class="form-control" placeholder="Person:" id="tentacles" name="tentacles" min="1"
+          max="100" onchange="costCount()">
+      </div>
+      <input class="form-control m-auto my-2" type="text" placeholder="Pick a date:" aria-label="default input example"
+        onfocus="(this.type='date')" onblur="(this.type='text')">
+      <span style="text-align: end; text-transform: uppercase;" class="d-block total">Total cost:
+        <span>________</span></span>
+    </div>
+    <div class="rounded-3 book-form">
+      <input class="form-control m-auto my-2" type="text" placeholder="Name:" aria-label="default input example">
+      <input class="form-control m-auto my-2" type="text" placeholder="Surname:" aria-label="default input example">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label terms" for="flexCheckDefault">
+          <a href="#">Check terms & conditions</a>
+        </label>
       </div>
     </div>
-
-    
+    <div class="rounded-3 book-form">
+      <input type="email" class="form-control m-auto my-2" id="exampleFormControlInput1" placeholder="Email:">
+      <input class="form-control m-auto my-2" type="text" placeholder="Phone number:"
+        aria-label="default input example">
+      <button type="button" class="btn btn-success m-0 mt-3 w-100 btn-book">Book my flight</button>
+    </div>
+  </div>
+</div>
+<script src="book.js"></script>

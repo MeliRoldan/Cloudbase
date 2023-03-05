@@ -9,7 +9,7 @@ window.onscroll = function() {
 };
 
 $( function() {  
-  $(".navbar-nav").on("click", "a", function(){
+  $(".navbar-nav , .navbar-footer").on("click", "a", function(){
     let id = $(this).attr("id");
     $("#pages").load(id + ".html");
     if ((id !== "about") && (id !=="contact")) {
@@ -25,4 +25,17 @@ $( function() {
   });
  
   $("indicator").find("active").removeClass("indicator");
-}); 
+
+  $(".booknow-btn").on("click", function(){
+    $("#pages").load("book.html");
+  });
+
+  $(".contactus-btn, .map").on("click", function(){
+    $("#pages").load("contact.html");
+    $('.sponsors-container').hide();
+  });
+
+  $(".nav-link-footer").on("click", function(){
+    $(".navbar-nav").find(".nav-link.active").removeClass("active");
+  });
+});
