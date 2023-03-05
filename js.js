@@ -24,5 +24,5 @@ $( function() {
     $(this).addClass("active");
   });
  
-  $("indicator").hasClass("active").removeClass("indicator");
+  $("indicator").find("active").removeClass("indicator");
 }); 

@@ -22,25 +22,21 @@
     display: none;
 }
 
-.navbar a {
-    font-family: normal 125%/1.66667 Clan Pro,Helvetica,Arial,sans-serif;
-    font-size: 14px;
-}
-
 .navbar-brand {
     color: white;
     font-weight: bold;
     text-transform: uppercase;
-    
 }
 
-.nav-link {
+.navbar a {
+    font-family: normal 125%/1.66667 Clan Pro,Helvetica,Arial,sans-serif;
+    font-size: 14px;
     color: rgb(30, 91, 81);
     text-transform: uppercase;
     font-weight: bold;
 }
 
-.nav-link:hover {
+.navbar a:hover {
     color: white;
 }
 
