@@ -3,7 +3,7 @@ window.onload = function(){
 
   window.onscroll = function() {
     "use strict";
-    if (document.body.scrollTop >= 70 || document.documentElement.scrollTop >= 70) {
+    if (document.body.scrollTop >= 155 || document.documentElement.scrollTop >= 155) {
       myNav.classList.add("scroll");
     } else {
       myNav.classList.remove("scroll");
