@@ -1,4 +1,3 @@
-
 var myNav = document.getElementById("nav");
 window.onscroll = function() {
   "use strict";
@@ -10,22 +9,20 @@ window.onscroll = function() {
 };
 
 $( function() {  
- 
   $(".navbar-nav").on("click", "a", function(){
     let id = $(this).attr("id");
-    
     $("#pages").load(id + ".html");
     if ((id !== "about") && (id !=="contact")) {
-      $('.jandaba').show();
+      $('.sponsors-container').show();
     } else {
-      $('.jandaba').hide();
+      $('.sponsors-container').hide();
     };
   });
+
+  $(".nav-link").on("click", function(){
+    $(".navbar-nav").find(".nav-link.active").removeClass("active");
+    $(this).addClass("active");
+  });
  
-  
   $("indicator").hasClass("active").removeClass("indicator");
-
- 
-
-
-}) 
+}); 
