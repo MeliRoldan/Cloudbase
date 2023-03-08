@@ -211,6 +211,7 @@
 
 .benefits-container {
     height: 500px;
+    position: relative;
 }
 
 .benefits {
@@ -218,38 +219,64 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     opacity: 0.4;
     height: 100%;
-    background-attachment: fixed;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .benefits-text {
-    color: #000000;
     height: 100%;
-    position:static;
-    bottom: 60%;
-    transform: translateY(-60%);
-    text-align: center;
-    width: 53.33333333333%;
-    text-transform: uppercase;
+    width: 100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
 }
 
 .benefits-text h5 {
-    line-height: 40px;
     font-family: normal 125%/1.66667 Clan Pro,Helvetica,Arial,sans-serif;
     font-size: 20px;
     font-weight: bold;
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 40px;
+    width: 70%;
 }
 
 .sponsors {
-    height: 100px;
-    overflow: hidden;
+    height: 50px;
 }
 
-.sponsors .card img {
-    width: auto;
+.col-img {
     height: 100%;
-    padding: 30px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.col-img-1 {
+    background-image: url(images/athletes-226546.png);
+}
+
+.col-img-2 {
+    background-image: url(images/pngegg.png);
+}
+
+.col-img-3 {
+    background-image: url(images/tbc.jpg);
+}
+
+.col-img-4 {
+    background-image: url(images/Nova_Logo_Red_transparent_Background.png);
+}
+
+.col-img-5 {
+    background-image: url(images/gopro-825822.png);
 }
 
 .social {
