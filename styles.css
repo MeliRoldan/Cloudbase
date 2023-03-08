@@ -66,9 +66,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     height: 100%;
-
     filter: contrast(80%);
 }
 
@@ -121,6 +119,12 @@
     color: rgb(255, 255, 255);
     width: 63.3333333%;
 }
+
+@media only screen and (max-width: 1050px) {
+    .carousel-caption p {
+        width: 100%;
+    };
+};
 
 .carousel-indicators .indicator {
     width: 5%;
