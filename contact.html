@@ -56,16 +56,16 @@
   <div id="pages">
     <div class="container-fluid about-header p-0">
       <!--HEADER AND PAGE TITLE-->
-      <div class="book-container container">
-        <h5 style="color: white; width: 80%; text-transform: uppercase;">
+      <div class="book-container container-fluid w-50">
+        <h5 style="color: white; width: 50%; text-transform: uppercase;" class="m-0">
           Contact us
         </h5>
       </div>
     </div>
 
     <!--CONTACT US CONTENT-->
-    <div class="container py-5 border-bottom">
-      <ul style="list-style-type: none; text-transform: uppercase;" class="d-flex justify-content-between m-0 p-0">
+    <div class="container-fluid px-5 py-5 border-bottom">
+      <ul style="list-style-type: none; text-transform: uppercase;" class="d-flex justify-content-between p-0">
         <li>
           <h5>Tbilisi</h5>
           <a target="_blank" href="https://goo.gl/maps/nQMPPZcKK2JAMehT6"
@@ -96,56 +96,71 @@
   </div>
 
   <!---FOOTER, გვერის დაბოლოება, მეორდება ყველა გვერდზე-->
-  <div class="container footer d-flex justify-content-between align-items-center">
-    <!--UL/LI მენიუ-->
-    <ul style="list-style-type: none;" class="navbar-footer">
-      <li>
-        <a class="nav-link-footer" id="about" href="about.html">About us</a>
-      </li>
-      <li>
-        <a class="nav-link-footer" id="book" href="book.html">Book</a>
-      </li>
-      <li>
-        <a class="nav-link-footer" id="news" href="news.html">News</a>
-      </li>
-      <li>
-        <a class="nav-link-footer" id="contact" href="contact.html">Contact us</a>
-      </li>
-    </ul>
-    <!--UL/LI საკონტაქტო ინფორმაცია-->
-    <ul style="list-style-type: none;">
-      <li>[+995] 555 35 30 30</li>
-      <li>cloudbase@gmail.com</li>
-      <li><a href="contact.html" class="map">Find us on the map</a></li>
-    </ul>
-    <!--UL/LI სოციალური მედიის ღილაკები-->
-    <ul class="text-center d-flex align-items-center" style="list-style-type: none;">
-      <li>
-        <a target="_blank" href="https://www.facebook.com/CloudBaseGeorgia"><i class="bi bi-facebook social"></i></a>
-      </li>
-      <li>
-        <a target="_blank" href="https://www.instagram.com/cloudbase.paragliding/?hl=en"><i class="bi bi-instagram social"></i></a>
-      </li>
-      <li>
-        <a><i class="bi bi-whatsapp social"></i></a>
-      </li>
-      <li>
-        <a><i class="bi bi-telegram social"></i></a>
-      </li>
-      <li>
-        <a><i class="bi bi-snapchat social"></i></a>
-      </li>
-    </ul>
-
-    <ul style="list-style-type: none;">
-      <!--გვერდის კოფირაითი-->
-      <li style="font-size: 13px;">Copyright &copy MEIX</li>
-    </ul>
-
-    <!--UL ლოგო-->
-    <ul style="list-style-type: none; width: 15%;">
-      <img src="images/logo-small.jpg" alt="" class="w-100">
-    </ul>
+  <div class="container-fluid py-5">
+    <div class="row footer">
+      <!--UL/LI მენიუ-->
+      <div class="col col-12 col-sm-4 col-md-3">
+        <ul style="list-style-type: none;">
+          <li>
+            <a class="nav-link-footer" id="about" href="about.html">About us</a>
+          </li>
+          <li>
+            <a class="nav-link-footer" id="book" href="book.html">Book</a>
+          </li>
+          <li>
+            <a class="nav-link-footer" id="news" href="news.html">News</a>
+          </li>
+        </ul>
+      </div>
+      <!--UL/LI საკონტაქტო ინფორმაცია-->
+      <div class="col col-12 col-sm-4 col-md-3">
+        <ul style="list-style-type: none;" class="ps-0">
+          <li>[+995] 555 35 30 30</li>
+          <li class="text-lowercase">cloudbase@gmail.com</li>
+          <li><a href="contact.html" class="map">Find us on the map</a></li>
+        </ul>
+      </div>
+      <!--UL/LI სოციალური მედიის ღილაკები-->
+      <div class="col col-12 col-sm-4 col-md-3 d-flex flex-column align-items-center">
+        <ul class="d-flex ps-0" style="list-style-type: none;">
+          <li>
+            <a target="_blank" href="https://www.facebook.com/CloudBaseGeorgia">
+              <i class="bi bi-facebook social"></i>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.instagram.com/cloudbase.paragliding/?hl=en">
+              <i class="bi bi-instagram social"></i>
+            </a>
+          </li>
+          <li>
+            <a>
+              <i class="bi bi-whatsapp social"></i>
+            </a>
+          </li>
+          <li>
+            <a>
+              <i class="bi bi-telegram social"></i>
+            </a>
+          </li>
+          <li>
+            <a>
+              <i class="bi bi-snapchat social"></i>
+            </a>
+          </li>
+        </ul>
+        <!--გვერდის კოფირაითი-->
+        <ul style="list-style-type: none;" class=" ps-0">
+          <li style="font-size: 13px;">Copyright &copy MEIX</li>
+        </ul>
+      </div>
+      <!--UL ლოგო-->
+      <div class="col col-12 col-sm-12 col-md-3">
+        <div class="logo-div text-center">
+          <img src="images/logo-small.jpg" alt="" style="height: 123px; width: 123px;">
+        </div>
+      </div>
+    </div>
   </div>
 
   <!--კოდი-->
