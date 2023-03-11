@@ -22,6 +22,8 @@
     display: none;
 }
 
+
+
 .navbar-brand span {
     color: white;
     font-weight: bold;
@@ -110,21 +112,35 @@
 .carousel-caption h1 {
     text-transform: uppercase;
     padding-bottom: 15px;
+    font-size: 25px;
+}
+
+@media (max-width: 576px) {
+    .carousel-caption h1 {
+        font-size: 20px;
+    }
 }
 
 .carousel-caption p {
-    font-size: 20px;
+    font-size: 18px;
     text-transform: uppercase;
     font-weight: bold;
     color: rgb(255, 255, 255);
     width: 63.3333333%;
 }
 
-@media only screen and (max-width: 1050px) {
+@media (max-width: 1050px) {
     .carousel-caption p {
         width: 100%;
-    };
-};
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-caption p {
+        font-size: 16px;
+    }
+}
+
 
 .carousel-indicators .indicator {
     width: 5%;
@@ -136,12 +152,46 @@
     
 }
 
-.services-col img, .services-col .card-body {
-    height: 369px;
+.services-small-col {
+    height: 350px;
 }
 
-.services-col-12 img, .services-col-12 .card-body {
-    height: 453px;
+.services-big-col {
+    height: 400px;
+}
+
+.services-img {
+    height: 350px;
+    width: 100%;
+}
+
+.card {
+    border-radius: 0px;
+}
+
+.services-img-big {
+    height: 400px;
+    width: 100%;
+}
+
+@media (max-width:576px){
+    .services-small-col {
+        height: 500px;
+    }
+    
+    .services-big-col {
+        height: 650px;
+    }
+    
+    .services-img {
+        height: 300px;
+        width: 100%;
+    }
+    
+    .services-img-big {
+        height: 300px;
+        width: 100%;
+    }
 }
 
 .card-body {
@@ -151,7 +201,7 @@
 .card-body h5 {
     text-transform: uppercase;
     letter-spacing: .03em;
-    font-size: 35px;
+    font-size: 25px;
 }
 
 .btn-link {
@@ -239,13 +289,19 @@
 
 .benefits-text h5 {
     font-family: normal 125%/1.66667 Clan Pro,Helvetica,Arial,sans-serif;
-    font-size: 18px;
+    font-size: 90%;
     font-weight: bold;
     color: #000000;
     text-align: center;
     text-transform: uppercase;
-    line-height: 40px;
-    width: 70%;
+    line-height: 25px;
+    width: 80%;
+}
+
+@media only screen and (max-width:576px) {
+    .benefits-text h5 {
+        font-size: 75%;
+    }
 }
 
 .sponsors {
@@ -281,8 +337,8 @@
 
 .social {
     color: rgb(62, 169, 161);
-    font-size: 25px;
-    margin: 5px;
+    font-size: 23px;
+    padding-right: 3px;
 }
 
 .footer ul {
@@ -292,43 +348,26 @@
     font-weight: 500;
 }
 
-.footer ul li {
+.footer ul li a {
     font-family:normal 125%/1.66667 Clan Pro,Helvetica,Arial,sans-serif;
-    padding: 5px 0px;
-}
-
-@media only screen and (max-width: 576px) {
-    .footer ul , .footer .col {
-        text-align: center;
-        padding-left: 0px;
-        padding-right: 0px;
-    };
-
-    .logo-div {
-        text-align: end;
-    };
-};
-
-.logo-div {
-    padding-left: 32px;
-}
-
-.nav-link-footer {
+    padding: 8px 0px;
     color: rgb(62, 169, 161);
     text-decoration: none;
 }
 
-.nav-link-footer:hover {
+.footer ul li a:hover , .footer ul li:hover {
     color: green;
 }
 
-.map {
-    text-decoration: none;
-    color:rgb(62, 169, 161); ;
+@media only screen and (max-width: 576px) {
+    .footer ul , .footer .col {
+        text-align: center; 
+    }
 }
 
-.map:hover {
-    color: green;
+.l-container {
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .book-header {

@@ -21,6 +21,10 @@ $(document).ready(function(){
   $(".contactus-btn").click(function(){
     window.location = "contact.html";
   });
+
+  /*$(".navbar-toggler").on("click", function(){
+    $(".navbar-nav").addClass("bg-white");
+  })*/
 });
 
 
