@@ -439,12 +439,21 @@
     text-transform: uppercase;
 } 
 
-.book-container {
-    position: absolute;
-    left: 2.6%;
-    top: 50%;
-    transform: translateY(-50%);
-    font-family: normal 125%/1.66667 Clan Pro,Helvetica,Arial,sans-serif;
+
+@media only screen and (max-width: 576px) {
+    .book-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .book-form {
+        width: 80% !important;
+    }
+
+    .book-header {
+        height: 900px;
+    }
 }
 
 .book-form {
@@ -474,13 +483,7 @@
     width: 100%;
 }
 
-.about-img-3 {
-    background-image: url(images/news2.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100%; 
-}
+
 
 .about-header {
     background-image: url(images/book-11.jpg);
