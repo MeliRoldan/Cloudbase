@@ -2,20 +2,9 @@
     box-sizing: border-box;
 }
 
-@font-face {
-    font-family: Clan Pro;
-    src: url(../Fonts/FFClanWebProNews.woff2) format("woff2"),url(../Fonts/FFClanWebProNews.woff) format("woff");
-    font-weight: 400
-}
-
-@font-face {
-    font-family: Clan Pro;
-    src: url(../Fonts/FFClanWebProRegular.woff2) format("woff2"),url(../Fonts/FFClanWebProRegular.woff) format("woff");
-    font-weight: 300
-}
-
 .nav {
     background-color: transparent;
+    padding: 0px 16px;
 }
 
 .scroll {
@@ -30,17 +19,14 @@
     color: rgb(16, 132, 124);
     text-transform: uppercase;
     font-size: 18px;
-    font-weight: 400;
-   
+    font-family: 'Rajdhani', sans-serif;
 }
 
 .nav-link {
-    font-family: normal 125%/1.66667 Clan Pro,Helvetica,Arial,sans-serif;
-    font-size: 14px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 15px;
     color: white;
     text-transform: uppercase;
-    font-weight: 400;
-   
 }
 
 .nav-link:hover {
@@ -72,7 +58,7 @@
 }
 
 .carousel-caption {
-    font-family: normal 125%/1.66667 Clan Pro,Helvetica,Arial,sans-serif;
+    font-family: 'Rajdhani', sans-serif;
     text-align: start;
     position: absolute;
     left: 7.33%;
@@ -88,8 +74,8 @@
 }
 
 .carousel-img-2 {
-    background-image: url(images/svaneti-5.jpg);
-    background-position: bottom;
+    background-image: url(images/svaneti-9.jpg);
+    background-position: center center;
 }
 
 .carousel-img-3 {
@@ -126,8 +112,8 @@
   }
   
   .carousel-img {
-    -webkit-animation: zoom 20s;
-    animation: zoom 20s;
+    -webkit-animation: zoom 25s;
+    animation: zoom 25s;
   }
 
 .carousel-caption h1 {
@@ -159,7 +145,6 @@
 .carousel-caption p {
     font-size: 18px;
     text-transform: uppercase;
-    font-weight: bold;
     color: rgb(255, 255, 255);
     width: 63.3333333%;
     visibility: hidden;
@@ -250,7 +235,9 @@
 }
 
 .card-body {
-    font-family: normal 125%/1.66667 Clan Pro,Helvetica,Arial,sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+    position: relative;
+    z-index: 0;
 }
 
 .card-body h5 {
@@ -260,7 +247,7 @@
 }
 
 .btn-link {
-    font-family: normal 125%/1.66667 Clan Pro,Helvetica,Arial,sans-serif;
+    font-family: 'Rajdhani', sans-serif;
     letter-spacing: 2px;
     font-size: 12px;
     font-weight: bold;
@@ -272,13 +259,60 @@
 }
 
 .btn-2 {
-    font-family: normal 125%/1.66667 Clan Pro,Helvetica,Arial,sans-serif;
+    font-family: 'Rajdhani', sans-serif;
     padding-left: 25px;
     padding-right: 25px;
     text-transform: uppercase;
     font-size: 13px;
     font-weight:600;
     border-radius: 0%;
+}
+
+
+.btn-bg {
+    background-color: rgb(62, 169, 161);
+    border-color: rgb(62, 169, 161);
+    color: white;
+}
+
+.btn-bg:hover {
+    background-color: white !important;
+    color: rgb(62, 169, 161);
+}
+
+/* CSS */
+.button-52 {
+  font-size: 14px;
+  font-weight: 200;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 6px 43px;
+  outline: 0;
+  border: 1px solid rgb(5, 88, 82);
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-52:after {
+  content: "";
+  background-color: rgb(62, 169, 161);
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.button-52:hover:after {
+  top: 0px;
+  left: 0px;
 }
 
 .btn-2:hover {
@@ -322,7 +356,7 @@
 .benefits {
     background-image: url(images/tbilisi-5.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 100%;
@@ -342,13 +376,12 @@
 }
 
 .benefits-text h5 {
-    font-family: normal 125%/1.66667 Clan Pro,Helvetica,Arial,sans-serif;
-    font-size: 90%;
-    font-weight: bold;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
     color: #ffffff;
     text-align: center;
     text-transform: uppercase;
-    line-height: 25px;
+    line-height: 33px;
     width: 80%;
 }
 
@@ -358,12 +391,9 @@
     }
 }
 
-.sponsors {
-    height: 40px;
-}
-
 .col-img {
     height: 100%;
+    width: 100%;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -392,19 +422,18 @@
 .social {
     color: rgb(62, 169, 161);
     font-size: 23px;
-    padding-right: 3px;
+    padding-right: 6px;
 }
 
 .footer ul {
-    font-family:normal 125%/1.66667 Clan Pro,Helvetica,Arial,sans-serif;
+    font-family: 'Rajdhani', sans-serif;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 500;
 }
 
 .footer ul li a {
-    font-family:normal 125%/1.66667 Clan Pro,Helvetica,Arial,sans-serif;
-    padding: 8px 0px;
+    font-family: 'Rajdhani', sans-serif;
     color: rgb(62, 169, 161);
     text-decoration: none;
 }
@@ -413,15 +442,9 @@
     color: green;
 }
 
-@media only screen and (max-width: 576px) {
-    .footer ul , .footer .col {
-        text-align: center; 
-    }
-}
-
 .l-container {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .book-header {
