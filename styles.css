@@ -16,7 +16,7 @@
 }
 
 .navbar-brand span {
-    color: rgb(16, 132, 124);
+    color: rgb(21, 157, 148);
     text-transform: uppercase;
     font-size: 18px;
     font-family: 'Rajdhani', sans-serif;
@@ -30,11 +30,11 @@
 }
 
 .nav-link:hover {
-    color: rgb(16, 132, 124);
+    color: rgb(0, 0, 0);
 }
 
 .active {
-    color: rgb(16, 132, 124) !important;
+    color: rgb(0, 0, 0) !important;
 }
 
 .carousel {
@@ -381,13 +381,12 @@
     color: #ffffff;
     text-align: center;
     text-transform: uppercase;
-    line-height: 33px;
     width: 80%;
 }
 
-@media only screen and (max-width:576px) {
+@media only screen and (max-width:596px) {
     .benefits-text h5 {
-        font-size: 75%;
+        font-size: 16px;
     }
 }
 
@@ -423,6 +422,12 @@
     color: rgb(62, 169, 161);
     font-size: 23px;
     padding-right: 6px;
+}
+
+@media (max-width:768px) and (min-width:362px) {
+    .logo-div {
+        margin: auto;
+    }
 }
 
 .footer ul {
@@ -471,17 +476,18 @@
     }
 
     .book-form {
-        width: 80% !important;
+        width: 70% !important;
     }
 
     .book-header {
-        height: 900px;
+        height: 700px;
     }
 }
 
 .book-form {
     background-color: rgba(255, 255, 255, 0.57);
     padding: 20px 30px;
+    margin: 10px 0px;
     width: 30.333%;
 }
 
@@ -489,31 +495,12 @@
     text-transform: uppercase;
 }
 
-.about-img-1 {
-    background-image: url(images/about-3.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100%;  
-}
-
-.about-img-2 {
-    background-image: url(images/team-2.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
-}
-
-
-
 .about-header {
     background-image: url(images/book-11.jpg);
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
-    height: 390px;
+    height: 290px;
     background-attachment: fixed;
 }
 
@@ -558,3 +545,6 @@ input[type="checkbox"]:checked {
     height: 253px;
 }
 
+#pages div {
+    font-family: 'Rajdhani', sans-serif;
+}

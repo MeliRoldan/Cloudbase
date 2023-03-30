@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap');
+  </style>
   <title>CloudBase</title>
   <link rel="icon" type="image/x-icon" href="images/logo2.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -21,31 +24,31 @@
 
 <body>
   <!--NAVBAR BOOSTRAP მენიუ, მეორდება ყველა გვერდზე-->
-  <nav class="navbar navbar-expand-lg fixed-top border-bottom nav m-0 px-4 navbar-dark" id="nav">
+  <nav class="navbar navbar-expand-lg fixed-top nav m-0 navbar-dark" id="nav">
     <!--NAVBAR-TOGGLE-->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <!--NAVBAR-BRAND-->
-    <a class="navbar-brand p-0 m-0" href="index.html"><span>cloudbase</span></a>
+    <a class="navbar-brand p-0 pe-2" href="index.html"><span>cloudbase</span></a>
     <!--NAVBAR_COLLAPSE-->
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
       <!--NAVBAR UL/LI/A-->
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" id="index" href="index.html">Home</a>
+          <a class="nav-link py-1" aria-current="page" id="index" href="index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" id="about" href="about.html">About us</a>
+          <a class="nav-link py-1 active" id="about" href="about.html">About us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="book" href="book.html">Book</a>
+          <a class="nav-link py-1" id="book" href="book.html">Book</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="news" href="news.html">News</a>
+          <a class="nav-link py-1" id="news" href="news.html">News</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="contact" href="contact.html">Contact us</a>
+          <a class="nav-link py-1" id="contact" href="contact.html">Contact us</a>
         </li>
       </ul>
     </div>
@@ -54,17 +57,11 @@
   <!--PAGES DIV გვერდის მთავარი კონტენტის კონტეინერი, მეორდება ყველა გვერდზე, ხოლო შიგნით კონტენტი იცვლება გვერდებზე-->
   <div id="pages">
     <div class="container-fluid about-header p-0">
-      <!--HEADER AND PAGE TITLE-->
-      <div class="book-container container w-50">
-        <h5 style="color: white; width: 100%; text-transform: uppercase; font-size: 18px;" class="m-0">
-          About us
-        </h5>
-      </div>
     </div>
 
     <!--ABOUT US CONTENT-->
-    <div class="container about-text text-start py-3">
-      <h5 style="color: rgb(0, 0, 0);" class="py-5">Quality is the result of a long process.
+    <div class="container about-text text-start py-5">
+      <h5 style="color: rgb(0, 0, 0);" class="">Quality is the result of a long process.
         Precision and perfection at every step of the process is our priority.
         Lorem ipsum dolor, sit amet consectetur adipisicing elit.
         Amet quia, iure facere provident nesciunt placeat autem illo aliquid animi omnis hic aut necessitatibus.
@@ -75,13 +72,13 @@
         aut quam ex.
       </h5>
     </div>
-    <div class="container-fluid p-0 d-flex" style="height: 600px;">
-      <div class="about-img-1 p-0 m-0 w-100 h-100">
-
+    <div class="container-fluid px-3">
+      <div class="about-img-1 p-0 m-0 h-100">
+        <img src="images/about-33.jpg" alt="" style="object-fit: contain; height: 100%; width: 100%;">
       </div>
     </div>
-    <div class="container about-text text-start py-3">
-      <h5 style="color: rgb(0, 0, 0);" class="py-5">Quality is the result of a long process.
+    <div class="container about-text text-start py-5">
+      <h5 style="color: rgb(0, 0, 0);" class="">Quality is the result of a long process.
         Precision and perfection at every step of the process is our priority.
         Lorem ipsum dolor, sit amet consectetur adipisicing elit.
         Amet quia, iure facere provident nesciunt placeat autem illo aliquid animi omnis hic aut necessitatibus.
@@ -92,14 +89,14 @@
         aut quam ex.
       </h5>
     </div>
-    <div class="container-fluid p-0" style="height: 600px;">
-      <div class="about-img-2 p-0 m-0">
-
+    <div class="container-fluid px-3">
+      <div class="about-img-2 p-0 m-0 h-100">
+        <img src="images/team-22.jpg" alt="" style="object-fit:contain; height: 100%; width: 100%;">
       </div>
     </div>
     <div class="container-fluid border-bottom">
-      <div class="container text-start py-3">
-        <h5 style="color: rgb(0, 0, 0);" class="pt-5">Quality is the result of a long process.
+      <div class="container text-start py-5">
+        <h5 style="color: rgb(0, 0, 0);" class="">Quality is the result of a long process.
           Precision and perfection at every step of the process is our priority.
           Lorem ipsum dolor, sit amet consectetur adipisicing elit.
           Amet quia, iure facere provident nesciunt placeat autem illo aliquid animi omnis hic aut necessitatibus.
@@ -114,34 +111,18 @@
   </div>
 
   <!---FOOTER, გვერის დაბოლოება, მეორდება ყველა გვერდზე-->
-  <div class="l-container py-5">
-    <div class="row footer">
+  <div class="container m-auto py-5">
+    <div class="footer row row-cols-lg-3 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-between">
       <!--UL/LI მენიუ-->
-      <div class="col col-12 col-sm-4 col-md-3">
+      <div class="col w-auto">
         <ul class="p-0 m-0" style="list-style-type: none;">
-          <li>
-            <a class="nav-link-footer" id="about" href="about.html">About us</a>
+          <li class="py-2">
+            <a class="pe-3" id="about" href="about.html">About us</a>
+            <a class="pe-3" id="book" href="book.html">Book</a>
+            <a class="" id="news" href="news.html">News</a>
           </li>
-          <li>
-            <a class="nav-link-footer" id="book" href="book.html">Book</a>
-          </li>
-          <li>
-            <a class="nav-link-footer" id="news" href="news.html">News</a>
-          </li>
-        </ul>
-      </div>
-      <!--UL/LI საკონტაქტო ინფორმაცია-->
-      <div class="col col-12 col-sm-4 col-md-3">
-        <ul class="p-0 m-0" style="list-style-type: none;">
-          <li>[+995] 555 35 30 30</li>
-          <li class="text-lowercase">cloudbase@gmail.com</li>
-          <li><a href="contact.html" class="map">Find us on map</a></li>
-        </ul>
-      </div>
-      <!--UL/LI სოციალური მედიის ღილაკები-->
-      <div class="col col-12 col-sm-4 col-md-3">
-        <ul class="p-0 m-0 text-center" style="list-style-type: none;">
-          <li>
+          <!--UL/LI სოციალური მედიის ღილაკები-->
+          <li class="pt-2">
             <a target="_blank" href="https://www.facebook.com/CloudBaseGeorgia"><i class="bi bi-facebook social"></i></a>
             <a target="_blank" href="https://www.instagram.com/cloudbase.paragliding/?hl=en"><i class="bi bi-instagram social"></i></a>
             <a><i class="bi bi-whatsapp social"></i></a>
@@ -149,13 +130,21 @@
             <a><i class="bi bi-snapchat social"></i></a>
           </li>
           <!--გვერდის კოფირაითი-->
-          <li style="font-size: 13px;">Copyright &copy MEIX</li>
+          <li class="py-2" style="font-size: 15px;" class="py-2">Copyright &copy MEIX</li>
+        </ul>
+      </div>
+      <!--UL/LI საკონტაქტო ინფორმაცია-->
+      <div class="col w-auto">
+        <ul class="p-0 m-0" style="list-style-type: none;">
+          <li class="py-2"><a href="contact.html" class="map"> <i class="bi bi-geo-alt-fill" style="font-size: 15px;"></i> Find us on map</a></li>
+          <li class="py-2">+995 555 35 30 30</li>
+          <li class="py-2" style="font-size: 15px;" class="text-lowercase">cloudbase@gmail.com</li>
         </ul>
       </div>
       <!--UL ლოგო-->
-      <div class="col col-12 col-sm-12 col-md-3">
-        <div class="logo-div text-center">
-          <img src="images/logo-small.jpg" alt="" style="height: 123px; width: 123px;">
+      <div class="col w-auto logo-div">
+        <div class="p-0 m-0">
+          <img src="images/logo-small.jpg" alt="" style="height: 120px; width: 120px;">
         </div>
       </div>
     </div>
