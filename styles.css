@@ -546,7 +546,7 @@ input[type="checkbox"]:checked {
 }
 
 .iti__country-list {
-   left: -50%;
+   left: -15%;
 }
 
 .iti__country-name {
@@ -576,4 +576,19 @@ input[type="checkbox"]:checked {
 
 .contact-map-row .card a:hover {
     color: green;
+}
+
+.about-img-1 , .about-img-2 {
+    background-size: cover;
+    height: 600px;
+}
+
+.about-img-1 {
+    background-image: url(images/about-3.jpg);
+    background-position: center right;
+}
+
+.about-img-2 {
+    background-image: url(images/team-22.jpg);
+    background-position: center center;
 }
