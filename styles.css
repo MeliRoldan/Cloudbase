@@ -457,8 +457,8 @@
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
-    height: 600px;
     background-attachment: fixed;
+    padding: 200px 0px 200px 0px !important;
 }
 
 .btn-book {
@@ -468,7 +468,7 @@
 } 
 
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 890px) {
     .book-container {
         flex-direction: column;
         justify-content: center;
@@ -476,19 +476,15 @@
     }
 
     .book-form {
-        width: 70% !important;
-    }
-
-    .book-header {
-        height: 700px;
+        width: 80% !important;
     }
 }
 
 .book-form {
     background-color: rgba(255, 255, 255, 0.57);
-    padding: 20px 30px;
-    margin: 10px 0px;
-    width: 30.333%;
+    padding: 20px 25px;
+    margin: 10px;
+    width: 33.3333%;
 }
 
 .form-select option {
@@ -504,14 +500,18 @@
     background-attachment: fixed;
 }
 
-.total , .terms a {
+.price , .terms a {
     color: rgb(19, 170, 160);
-    font-weight: bold;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.price:hover , .terms a:hover {
+    color: green;
 }
 
 .terms a {
-    font-size: 13px;
-    text-decoration: none;
+    font-size: 16px;
 }
 
 
@@ -537,6 +537,10 @@ input[type="checkbox"]:checked {
     border-color: rgb(19, 170, 160);
 }
 
+.iti {
+    width: 100%;
+}
+
 .card-title {
     text-transform: uppercase;
 }
@@ -547,4 +551,17 @@ input[type="checkbox"]:checked {
 
 #pages div {
     font-family: 'Rajdhani', sans-serif;
+}
+
+.contact-map-row i {
+    font-size: 16px;
+}
+
+.contact-map-row .card a {
+    color: rgb(19, 170, 160);
+    font-weight: 600;
+}
+
+.contact-map-row .card a:hover {
+    color: green;
 }
