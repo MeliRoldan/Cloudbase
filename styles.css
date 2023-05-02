@@ -15,8 +15,13 @@ html {
 }
 
 .nav {
-    background-color: transparent;
+    background-color: white;
     padding: 0px 16px;
+}
+
+.navbar-toggler {
+    margin: 5px 0px;
+    box-shadow: none !important;
 }
 
 .scroll {
@@ -28,25 +33,25 @@ html {
 }
 
 .navbar-brand span {
-    color: rgb(21, 157, 148);
+    color: #0C5D51;
     text-transform: uppercase;
-    font-size: 18px;
-    font-family: 'Rajdhani', sans-serif;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .nav-link {
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 15px;
-    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #023436;
     text-transform: uppercase;
 }
 
 .nav-link:hover {
-    color: rgb(0, 0, 0);
+    color: #037971;
 }
 
 .active {
-    color: rgb(0, 0, 0) !important;
+    color: #037971 !important;
 }
 
 .carousel {
@@ -70,7 +75,7 @@ html {
 }
 
 .carousel-caption {
-    font-family: 'Rajdhani', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: start;
     position: absolute;
     left: 7.33%;
@@ -131,7 +136,7 @@ html {
 .carousel-caption h1 {
     text-transform: uppercase;
     padding-bottom: 15px;
-    font-size: 25px;
+    font-size: 20px;
     visibility: hidden;
     position: absolute;
     left: 0%;
@@ -157,7 +162,6 @@ html {
 .carousel-caption p {
     font-size: 18px;
     text-transform: uppercase;
-    color: rgb(255, 255, 255);
     width: 63.3333333%;
     visibility: hidden;
     position: absolute;
@@ -247,7 +251,7 @@ html {
 }
 
 .card-body {
-    font-family: 'Rajdhani', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     position: relative;
     z-index: 0;
 }
@@ -255,28 +259,17 @@ html {
 .card-body h5 {
     text-transform: uppercase;
     letter-spacing: .03em;
-    font-size: 25px;
+    font-size: 18px;
 }
 
-.btn-link {
-    font-family: 'Rajdhani', sans-serif;
-    letter-spacing: 2px;
-    font-size: 12px;
-    font-weight: bold;
-    color: rgb(19, 170, 160);
-}
-
-.btn-link:hover {
-    color: green;
-}
 
 .btn-2 {
-    font-family: 'Rajdhani', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     padding-left: 25px;
     padding-right: 25px;
     text-transform: uppercase;
     font-size: 13px;
-    font-weight:600;
+    font-weight: bold;
     border-radius: 0%;
 }
 
@@ -294,8 +287,8 @@ html {
 
 /* CSS */
 .button-52 {
-  font-size: 14px;
-  font-weight: 200;
+  font-size: 13px;
+  font-weight: bold;
   color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -333,7 +326,7 @@ html {
 }
 
 .card-service-p {
-    color: rgb(19, 170, 160);
+    color: #037971;
     text-transform: uppercase;
     font-size: 12px;
 }
@@ -348,12 +341,7 @@ html {
     font-size: 16px;
 }
 
-.vert {
-    position: relative;
-    top: 0.8px;
-    -webkit-text-stroke: 1px;
-    font-size: 13px;
-}
+
 
 .footer , .copyright {
     background-color: rgb(255, 255, 255) ;
@@ -367,47 +355,34 @@ html {
 
 .benefits {
     background-image: url(images/tbilisi-5.jpg);
-   
-        
-        position:fixed; /* stretch a fixed position to the whole screen */
-        top:0;
-        height:100%; /* fix for mobile browser address bar appearing disappearing */
-        left:0;
-        right:0;
-        z-index:-2; /* needed to keep in the background */
-        
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        background-position: center center;
-      }
-  
-
-  
+    position:fixed; /* stretch a fixed position to the whole screen */
+    top:0;
+    height:100%; /* fix for mobile browser address bar appearing disappearing */
+    left:0;
+    right:0;
+    z-index:-2; /* needed to keep in the background */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    filter: brightness(130%);
+    opacity: 0.4;
+}
 
 .benefits-text {
-    height: 100%;
-    width: 100%;
-    position:absolute;
-    top: 0;
-    left: 0;
-    z-index: 10;
+   text-align: center;
+   width: 83%;
 }
 
 .benefits-text h5 {
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 20px;
-    color: #ffffff;
-    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color:#000000;
     text-transform: uppercase;
-    width: 80%;
-}
-
-@media only screen and (max-width:596px) {
-    .benefits-text h5 {
-        font-size: 16px;
-    }
+    line-height: 33.333px;
+    font-weight: bold;
+    margin: 0;
 }
 
 .col-img {
@@ -439,8 +414,8 @@ html {
 }
 
 .social {
-    color: rgb(62, 169, 161);
-    font-size: 23px;
+    color: #037971;
+    font-size: 20px;
     padding-right: 6px;
 }
 
@@ -451,20 +426,24 @@ html {
 }
 
 .footer ul {
-    font-family: 'Rajdhani', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 500;
 }
 
-.footer ul li a {
-    font-family: 'Rajdhani', sans-serif;
-    color: rgb(62, 169, 161);
+.footer ul li a , .footer ul li {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #037971;
     text-decoration: none;
 }
 
 .footer ul li a:hover , .footer ul li:hover {
-    color: green;
+    color: #03b5aa;
+}
+
+.bi:hover {
+    color: #03b5aa;
 }
 
 .l-container {
@@ -515,17 +494,29 @@ html {
     text-transform: uppercase;
 }
 
+.header {
+    height: 343px;
+}
+
 .about-header {
-    background-image: url(images/book-11.jpg);
+    background-image: url(images/event-1.jpg);
     background-size: cover;
-    background-position: center bottom;
+    background-position: center center;
     background-repeat: no-repeat;
-    height: 290px;
-    background-attachment: fixed;
+    height:100%; /* fix for mobile browser address bar appearing disappearing */
+    z-index:-2; /* needed to keep in the background */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    filter: grayscale(100%);
 }
 
 .price , .terms a {
-    color: rgb(19, 170, 160);
+    color: #037971;
     font-weight: 600;
     text-decoration: none;
 }
@@ -582,7 +573,7 @@ input[type="checkbox"]:checked {
 }
 
 #pages div {
-    font-family: 'Rajdhani', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .contact-map-row i {
