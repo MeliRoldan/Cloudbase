@@ -2,21 +2,25 @@
     box-sizing: border-box;
 }
 
-html {
-
-    overflow-y: scroll !important;
-  
-  }
-
-  .modal-open {
-
-  padding-right: 0 !important;
-
+* {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.nav {
+html {
+    overflow-y: scroll !important;
+    /*modal*/
+}
+
+.modal-open {
+    padding-right: 0 !important;
+    /*modal*/
+}
+
+/*MAIN MENU*/
+
+.navbar {
     background-color: white;
-    padding: 0px 16px;
+    padding: 5px 15px;
 }
 
 .navbar-toggler {
@@ -24,19 +28,15 @@ html {
     box-shadow: none !important;
 }
 
-.scroll {
-    display: none;
-}
-
-.navbar-nav {
-    margin-left: auto;
+.navbar-brand {
+    margin-right: auto;
+    padding: 0px 15px;
 }
 
 .navbar-brand span {
     color: #0C5D51;
     text-transform: uppercase;
     font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .nav-link {
@@ -54,14 +54,28 @@ html {
     color: #037971 !important;
 }
 
+/*CAROUSEL HERO BANNER*/
+
 .carousel {
-    height: 633px;
-    overflow: hidden;
+    height: 87vh;
+}
+
+.carousel-indicators {
+    width: 50%;
+    margin: auto;
+}
+
+.carousel-indicators button {
+    width: 5%;
+}
+
+.carousel-indicators .active {
+    width: 33%;
 }
 
 .carousel-inner {
-    height:100%;
-    background-color: #037971;    
+    height: 100%;
+    background-color: white;
 }
 
 .carousel-item {
@@ -71,113 +85,89 @@ html {
 .carousel-img {
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
     height: 100%;
     filter: contrast(80%);
+    -webkit-animation: zoom 25s;
+    animation: zoom 25s;
 }
-
-.carousel-caption {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: start;
-    position: absolute;
-    left: 7.33%;
-    top: 55%;
-    transform: translateY(-55%);
-    height: 70%;
-}
-
 
 .carousel-img-1 {
-    background-image: url(images/1-img-tbilisi.jpg);
-    background-position: center center;
+    background-image: url(images/1-img-tbilisi.webp);
 }
 
 .carousel-img-2 {
-    background-image: url(images/svaneti-9.jpg);
-    background-position: center center;
+    background-image: url(images/svaneti-9.webp);
 }
 
 .carousel-img-3 {
-    background-image: url(images/3-image-gonio.jpg);
-    background-position: center center;
+    background-image: url(images/3-image-gonio.webp);
 }
 
 .carousel-img-4 {
     background-image: url(images/4-image-tbilisi.jpg);
-    background-position: center center;
 }
 
 .carousel-img-5 {
     background-image: url(images/gudauri-9.jpg);
-    background-position: center center;
 }
 
 @-webkit-keyframes zoom {
     from {
-      -webkit-transform: scale(1, 1);
+        -webkit-transform: scale(1, 1);
     }
+
     to {
-      -webkit-transform: scale(1.3, 1.3);
+        -webkit-transform: scale(1.3, 1.3);
     }
-  }
-  
-  @keyframes zoom {
-    from {
-      transform: scale(1, 1);
-    }
-    to {
-      transform: scale(1.3, 1.3);
-    }
-  }
-  
-  .carousel-img {
-    -webkit-animation: zoom 25s;
-    animation: zoom 25s;
-  }
+}
+
+.carousel-caption {
+    height: 70%;
+    position: absolute;
+    left: 7.33%;
+    top: 55%;
+    transform: translateY(-55%);
+    text-align: start;
+}
 
 .carousel-caption h1 {
-    text-transform: uppercase;
-    padding-bottom: 15px;
-    font-size: 20px;
-    visibility: hidden;
     position: absolute;
     left: 0%;
-    top:30%;
-    animation-name: textanih;
+    top: 30%;
+    text-transform: uppercase;
+    font-size: 20px;
+    visibility: hidden;
+    animation-name: text-animation;
     animation-duration: 1s;
     animation-delay: 0.5s;
     animation-fill-mode: forwards;
 }
 
-@keyframes textanih {
-    from {visibility: hidden; left: 0%;}
-    to {visibility: visible; left: 5%;}
-    
-}
-
-@media (max-width: 576px) {
-    .carousel-caption h1 {
-        font-size: 20px;
-    }
-}
-
 .carousel-caption p {
-    font-size: 18px;
-    text-transform: uppercase;
-    width: 63.3333333%;
-    visibility: hidden;
     position: absolute;
     left: 0%;
     top: 50%;
-    animation-name: textanip;
+    width: 63.3333333%;
+    font-size: 18px;
+    text-transform: uppercase;
+    visibility: hidden;
+    animation-name: text-animation;
     animation-duration: 1s;
     animation-delay: 1s;
     animation-fill-mode: forwards;
 }
 
-@keyframes textanip {
-    from {visibility: hidden; left: 0%;}
-    to {visibility: visible; left: 5%;}
-    
+@keyframes text-animation {
+    from {
+        visibility: hidden;
+        left: 0%;
+    }
+
+    to {
+        visibility: visible;
+        left: 5%;
+    }
 }
 
 @media (max-width: 1050px) {
@@ -192,25 +182,84 @@ html {
     }
 }
 
+/*SERVICES LIST*/
 
-.carousel-indicators .indicator {
-    width: 5%;
-  
+.card {
+    border: none;
+    border-radius: 0px;
+    padding: 0px;
 }
 
-.carousel-indicators .active {
-    width: 33%;
-    
+.card-body {
+    position: relative;
+    z-index: 0;
+}
+
+.card-body h5 {
+    text-transform: uppercase;
+    letter-spacing: .03em;
+    font-size: 18px;
+    padding: 15px 0px;
+}
+
+.card-service-p {
+    color: #037971;
+    text-transform: uppercase;
+    font-size: 12px;
 }
 
 .services-small-col {
     height: 333px;
-    overflow: hidden;
 }
 
 .services-big-col {
     height: 433px;
-    overflow: hidden;
+}
+
+.services-small-col button {
+    padding: 6px 25px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 0%;
+}
+
+.services-small-col button:hover {
+    background-color: rgb(62, 169, 161);
+    border-color: rgb(62, 169, 161);
+}
+
+.services-big-col button {
+    position: relative;
+    font-size: 13px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 6px 43px;
+    outline: 0;
+    border: 1px solid rgb(5, 88, 82);
+    background-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.services-big-col button:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    background-color: rgb(62, 169, 161);
+    width: 100%;
+    z-index: -1;
+    transition: 0.2s;
+}
+
+.services-big-col button:hover:after {
+    top: 0px;
+    left: 0px;
 }
 
 .services-img {
@@ -221,10 +270,6 @@ html {
     overflow: hidden;
 }
 
-.card {
-    border-radius: 0px;
-}
-
 .services-img-big {
     height: 433px;
     width: 100%;
@@ -233,158 +278,64 @@ html {
     overflow: hidden;
 }
 
-@media (max-width:576px){
+@media (max-width:576px) {
     .services-small-col {
         height: 450px;
     }
-    
+
     .services-big-col {
         height: 650px;
     }
-    
+
     .services-img {
         height: 225px;
     }
-    
+
     .services-img-big {
         height: 325px;
     }
 }
 
-.card-body {
-    font-family: Arial, Helvetica, sans-serif;
-    position: relative;
-    z-index: 0;
-}
-
-.card-body h5 {
-    text-transform: uppercase;
-    letter-spacing: .03em;
-    font-size: 18px;
-}
-
-
-.btn-2 {
-    font-family: Arial, Helvetica, sans-serif;
-    padding-left: 25px;
-    padding-right: 25px;
-    text-transform: uppercase;
-    font-size: 13px;
-    font-weight: bold;
-    border-radius: 0%;
-}
-
-
-.btn-bg {
-    background-color: rgb(62, 169, 161);
-    border-color: rgb(62, 169, 161);
-    color: white;
-}
-
-.btn-bg:hover {
-    background-color: white !important;
-    color: rgb(62, 169, 161);
-}
-
-/* CSS */
-.button-52 {
-  font-size: 13px;
-  font-weight: bold;
-  color: #ffffff;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  padding: 6px 43px;
-  outline: 0;
-  border: 1px solid rgb(5, 88, 82);
-  cursor: pointer;
-  position: relative;
-  background-color: rgba(0, 0, 0, 0);
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-.button-52:after {
-  content: "";
-  background-color: rgb(62, 169, 161);
-  width: 100%;
-  z-index: -1;
-  position: absolute;
-  height: 100%;
-  top: 7px;
-  left: 7px;
-  transition: 0.2s;
-}
-
-.button-52:hover:after {
-  top: 0px;
-  left: 0px;
-}
-
-.btn-2:hover {
-    background-color: rgb(62, 169, 161);
-    border-color: rgb(62, 169, 161);
-}
-
-.card-service-p {
-    color: #037971;
-    text-transform: uppercase;
-    font-size: 12px;
-}
-
-.card-text {
-    color: #000000;
-    font-size: 16px;
-}
-
-.card-text-lg {
-    color: black;
-    font-size: 16px;
-}
-
-
-
-.footer , .copyright {
-    background-color: rgb(255, 255, 255) ;
+.footer,
+.copyright {
+    background-color: rgb(255, 255, 255);
     color: rgb(62, 169, 161);
 }
 
 .benefits-container {
     height: 600px;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .benefits {
-    background-image: url(images/tbilisi-5.jpg);
-    position:fixed; /* stretch a fixed position to the whole screen */
-    top:0;
-    height:100%; /* fix for mobile browser address bar appearing disappearing */
-    left:0;
-    right:0;
-    z-index:-2; /* needed to keep in the background */
+    background-image: url(images/tbilisi-5.webp);
+    position: fixed;
+    top: 0;
+    height: 100%; /* fix for mobile browser address bar appearing disappearing */
+    left: 0;
+    right: 0;
+    z-index: -2; /* needed to keep in the background */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     background-position: center center;
-}
-
-.benefits-text {
-   text-align: center;
-   width: 100%;
-   background-color: white;
+    filter: brightness(85%);
 }
 
 .benefits-text h5 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    color: #0C5D51;
+    font-size: 16px;
+    color: #ffffff;
     text-transform: uppercase;
     line-height: 33.333px;
     font-weight: bold;
     margin: auto;
     width: 83%;
-    padding: 60px 0px;
+    text-align: center;
 }
 
 .col-img {
@@ -434,13 +385,15 @@ html {
     font-weight: 500;
 }
 
-.footer ul li a , .footer ul li {
+.footer ul li a,
+.footer ul li {
     font-family: Arial, Helvetica, sans-serif;
     color: #037971;
     text-decoration: none;
 }
 
-.footer ul li a:hover , .footer ul li:hover {
+.footer ul li a:hover,
+.footer ul li:hover {
     color: #03b5aa;
 }
 
@@ -462,10 +415,10 @@ html {
 }
 
 .btn-book {
-    background-color:rgb(62, 169, 161);
+    background-color: rgb(62, 169, 161);
     border-color: rgb(62, 169, 161);
     text-transform: uppercase;
-} 
+}
 
 
 @media only screen and (max-width: 890px) {
@@ -504,8 +457,10 @@ html {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    height:100%; /* fix for mobile browser address bar appearing disappearing */
-    z-index:-2; /* needed to keep in the background */
+    height: 100%;
+    /* fix for mobile browser address bar appearing disappearing */
+    z-index: -2;
+    /* needed to keep in the background */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -516,13 +471,15 @@ html {
     filter: grayscale(100%);
 }
 
-.price , .terms a {
+.price,
+.terms a {
     color: #037971;
     font-weight: 600;
     text-decoration: none;
 }
 
-.price:hover , .terms a:hover {
+.price:hover,
+.terms a:hover {
     color: green;
 }
 
@@ -542,10 +499,10 @@ input[type="week"]:focus,
 input[type="number"]:focus,
 input[type="email"]:focus,
 input[type="tel"]:focus,
-.form-select:focus {   
-  border-color: rgba(19, 170, 160, 0.8);
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(19, 170, 160, 0.6);
-  outline: 0 none;
+.form-select:focus {
+    border-color: rgba(19, 170, 160, 0.8);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(19, 170, 160, 0.6);
+    outline: 0 none;
 }
 
 input[type="checkbox"]:checked {
@@ -558,7 +515,7 @@ input[type="checkbox"]:checked {
 }
 
 .iti__country-list {
-   left: -8%;
+    left: -8%;
 }
 
 .iti__country-name {
@@ -571,10 +528,6 @@ input[type="checkbox"]:checked {
 
 .card-img-top {
     height: 253px;
-}
-
-#pages div {
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .contact-map-row i {
@@ -590,14 +543,10 @@ input[type="checkbox"]:checked {
     color: green;
 }
 
-.about-img-1 , .about-img-2 {
+.about-img-1,
+.about-img-2 {
     background-size: cover;
     height: 600px;
-}
-
-.about-img-1 {
-    background-image: url(images/about-3.jpg);
-    background-position: center right;
 }
 
 .about-img-2 {
