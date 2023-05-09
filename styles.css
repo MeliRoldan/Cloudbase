@@ -20,7 +20,11 @@ html {
 
 .navbar {
     background-color: white;
-    padding: 5px 15px;
+    padding: 0px 15px;
+}
+
+.scroll {
+    display: none;
 }
 
 .navbar-toggler {
@@ -105,11 +109,11 @@ html {
 }
 
 .carousel-img-4 {
-    background-image: url(images/4-image-tbilisi.jpg);
+    background-image: url(images/4-image-tbilisi.webp);
 }
 
 .carousel-img-5 {
-    background-image: url(images/gudauri-9.jpg);
+    background-image: url(images/gudauri-9.webp)
 }
 
 @-webkit-keyframes zoom {
